@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management System</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+   
+        <h1>Library Management System</h1>
+        <h3>Add New Book</h3>
+        <div class="one">
+        <form id="bookForm">
+            
+            <input type="text" id="bookName" required placeholder="Book Name">
+           
+            <input type="text" id="authorName" required placeholder="Author Name:">
+           
+            <input type="text" id="publisherName" required placeholder="Publisher Name:">
+           
+            <input type="date" id="publishDate" required placeholder="Publish Date:">
+            
+            <div class="btn-container">
+                <button type="submit" onclick="saveFormData()"><a href="mainpage.html">Submit</a></button>
+                <button type="button"><a href="mainpage.html">Go Back</a></button>
+            </div>
+           
+
+        </form>
+    </div>
+    <script>
+        const formData = document.getElementById('bookForm');
+
+formData.addEventListener('submit', function(event) {
+    event.preventDefault();
+     // Get form data
+     const book = document.getElementById('bookName').value;
+     const author = document.getElementById('authorName').value;
+     const publisher = document.getElementById('publisherName').value;
+     const date = document.getElementById('publishDate').value;
+     const Data = {
+        book: book,
+        author: author,
+        publisher: publisher,
+        date: date
+    };
+     // Convert to JSON
+     const formDataJSON = JSON.stringify(Data);
+       // Store in local storage
+       localStorage.setItem('Data', formDataJSON);
+
+       alert('Form data stored in local storage');
+   });
+    </script>
+</body>
+</html>

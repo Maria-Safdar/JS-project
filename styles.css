@@ -1,0 +1,140 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+}
+h3 {
+    text-align: center;
+}
+form label,
+form input {
+    display: block;
+    margin-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+form input {
+    width: 70%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    align-items: center;
+}
+.btn-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.btn-container button {
+    background-color: #007bff;
+    
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.btn-container button a{
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Here starts Page 2 which has 3 main buttons in it */
+.page2{
+   
+    margin-left: 10%;
+}
+
+.page2 h1{
+   text-align: left;
+}
+.three {
+    display: flex; 
+    justify-content: flex-start;
+    padding: 10px;
+   
+}
+.three button{
+    padding: 10px 20px;
+    background-color: #007bff;
+    
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.three button a{
+    text-decoration: none;
+    color: white;
+}
+ /* Table styles that has 5 columns */
+ table {
+    width: 80%;
+    border-collapse: collapse;
+}
+
+ tr td {
+    padding: 20px;
+    text-align: left;
+    color:black;
+}
+
+  th {
+    background-color:  #007bff;
+    border-bottom: 2px solid #ccc;
+    color: #f4f4f4;
+    padding: 15px;
+}
+ th:not(:last-child),
+        td:not(:last-child) {
+            border-right: 1px solid #ccc;
+        }
+        .addnew {
+            display: flex;
+            justify-content: flex-start;
+
+        }
+        .addnew button{
+            padding: 10px 20px;
+            background-color: #007bff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 30%;
+        } 
+        .addnew button a{
+            text-decoration: none;
+            color: #fff;
+        }
+        
+        /* Now the record of authors are in this section */
+        .page3{
+            margin-left: 10%;
+        }
+        .page3 h1{
+          text-align: left;
+        }
+        .page3 button{
+            background-color: #007bff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            margin-right: 10px;
+            margin-top: 30%;  
+              
+        }
+        .page3 button a{
+            text-decoration: none;
+            color: #f4f4f4;
+        }
+        .innerrows{
+           height: 10px;
+            text-align: left;
+            border-bottom: 2px solid #ccc;
+            border-collapse: collapse;
+        }
